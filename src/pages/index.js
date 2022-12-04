@@ -1,0 +1,11 @@
+export { Home } from "./Home/Home";
+export { Login } from "./Login/Login";
+export { NoMatch } from "./NoMatch//NoMatch";
+export { Playlist } from "./Playlist/Playlist";
+export { LikedVideo } from "./LikedVideo/LikedVideo";
+export { Profile } from "./Profile/Profile";
+export { Signup } from "./Signup/Signup";
+export { Notes } from "./Notes/Notes";
+export { VideoDetails } from "./VideoDetails/VideoDetails";
+export { WatchHistory } from "./WatchHistory/WatchHistory";
+export { Videos } from "./Videos/videos";
