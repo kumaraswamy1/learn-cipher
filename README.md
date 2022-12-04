@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# **learn.cipher**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+learn.cipher is a video library web app developed to learn about finance and crypto related content.
 
-## Available Scripts
+## **Tech Stack**
 
-In the project directory, you can run:
+---
 
-### `npm start`
+### **- Frontend**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ReactJS
+- React Router for routing
+- Styling : Tailwind CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **- Backend ([Repo Link](https://github.com/kumaraswamy1/Videolibrary-backend))**
 
-### `npm test`
+- Express and NodeJS for backend API
+- Mongodb using mongoose for database
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Features**
 
-### `npm run build`
+- Video listing and Detail page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Playlist Management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - Create a custom playlist
+  - Add video to playlist
+  - Remove video from playlist
+  - Delete custom playlist
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Liked videos Management
 
-### `npm run eject`
+  - Add videos to liked videos
+  - Remove videos from liked videos.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Watch History Management
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - Watched videos will be shown in watch History.
+  - Remove videos from watch History.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Notes Management
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  - Add multiple notes to a particular video.
+  - Remove notes from video.
 
-## Learn More
+- User Managment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - JWT for authentication
+  - Private routes - liked videos, playlists, watch History and profile
+  - Persistent login
+  - User data stored in mongoDB
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Responsive Design
 
-### Code Splitting
+## **Instructions**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### To run the project locally, follow these steps:
 
-### Analyzing the Bundle Size
+- Clone this repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  ```
+  git clone https://github.com/kumaraswamy1/learn-cipher.git
 
-### Making a Progressive Web App
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Go to the project directory
+  ```
+  cd learn.cipher
+  ```
+- Install dependencies
+  ```
+  npm install
+  ```
+- Start
+  ```
+  npm start
+  ```
+- Open http://localhost:3000 to view it in the browser.
