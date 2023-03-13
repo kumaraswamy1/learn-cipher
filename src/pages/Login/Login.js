@@ -17,7 +17,7 @@ export function Login() {
 
 	const loginHandler = async (e) => {
 		e.preventDefault();
-		loginWithCredentials(Username, Password);
+		loginWithCredentials( username, password);
 	};
 
 	return (
