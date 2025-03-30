@@ -1,5 +1,6 @@
 import { createContext, useContext, useReducer, useState } from "react";
 import axios from "axios";
+import { baseURL } from "../services/API/api.instance";
 
 import { dataReducer } from "../reducer/Data-reducer";
 import { useEffect } from "react";
@@ -21,7 +22,7 @@ export function DataProvider({ children }) {
 		(async () => {
 			try {
 				const { data } = await axios.get(
-					"https://VideoLibrary-2.kumaraswamya.repl.co/videos"
+					`${baseURL}/videos`
 				);
 				dispatch({ type: "ON_LOAD", payload: data.videos });
 				return data;
@@ -33,7 +34,7 @@ export function DataProvider({ children }) {
 	const addToPlaylist = async (name) => {
 		try {
 			const { data } = await axios.get(
-				"https://VideoLibrary-2.kumaraswamya.repl.co/playlists",
+				`${baseURL}/playlists`,
 				{ name }
 			);
 
